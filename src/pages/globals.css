@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.aboutTop {
+  font-family: 'Catamaran';
+  font-weight: bolder;
+}
+
+.abouttoptext {
+  font-family: 'Kalam';
+  font-weight: 400;
+}
+
+.bgHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url('../Images/Logo3.avif');
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+}
+
+@media (max-width: 1047px) {
+  .bgHero {
+    background-size: cover;
+  }
+}
+
+.bgNav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url('../Images/Logo3.avif');
+  background-position: cover;
+  /* background-repeat: no-repeat; */
+  background-size: center;
+}
+
+.blog-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.blog-scrollbar-track::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.blog-scrollbar-thumb::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #ef4444, #dc2626, #7e22ce);
+}
+
+/* reviews swiper styles */
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.5; /* Adjust opacity as needed */
+  transform: scale(0.9); /* Optional: Adjust scale if needed */
+  margin: 5px;
+}
+
+/* Make the center slide fully visible */
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  border: 1px solid rgb(111, 15, 124);
+  border-radius: 5px;
+}
+
+.swiper-slide-active h1 {
+  /* color: rgb(111,15,124); */
+  background: linear-gradient(
+    90deg,
+    rgba(111, 15, 124, 1) 0%,
+    rgba(153, 42, 125, 1) 35%,
+    rgba(201, 91, 142, 1) 100%
+  );
+  -webkit-background-clip: text; /* Apply the gradient to the text */
+  color: transparent; /* Make the text transparent */
+  padding: 10px;
+}
+
+@media (width<1024px) {
+  .swiper-slide-active {
+    width: auto;
+    opacity: 1;
+    transform: scale(1);
+    border: 1px solid rgb(111, 15, 124);
+    border-radius: 5px;
+  }
+  .swiper-slide-active h1 {
+    /* color: rgb(111,15,124); */
+    background: linear-gradient(
+      90deg,
+      rgba(111, 15, 124, 1) 0%,
+      rgba(153, 42, 125, 1) 35%,
+      rgba(201, 91, 142, 1) 100%
+    );
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    color: transparent; /* Make the text transparent */
+  }
+  .swiper-slide-next h1 {
+    color: black;
+  }
+  .swiper-slide-next {
+    opacity: 0.5; /* Adjust opacity as needed */
+    transform: scale(0.9); /* Optional: Adjust scale if needed */
+    margin: 5px;
+  }
+}

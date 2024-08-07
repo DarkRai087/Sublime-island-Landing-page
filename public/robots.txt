@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.sublimeislands.com/
+
+# Sitemaps
+Sitemap: https://www.sublimeislands.com/sitemap.xml
